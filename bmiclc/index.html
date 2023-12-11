@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+ <div>
+    <h1>Calculator</h1>
+ </div>
+    <h1>BMI Calculator</h1>
+
+    <div>
+        <label for="height">Your Height (cm)</label>
+        <input type="text" id="height" name="height" />
+        <span id="height-error"></span>
+    </div>
+
+    <div>
+        <label for="weight">Your weight (kg)</label>
+        <input type="text" id="weight" name="weight" />
+        <span id="weight-error"></span>
+    </div>
+
+    <div>
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" />
+        <span id="age-error"></span>
+    </div>
+
+    <div>
+        <p>Please select gender:</p>
+        <input type="radio" id="gender-man" name="man" value="man">
+        <label for="gender-man">Man</label><br />
+        <input type="radio" id="gender-woman" name="woman" value="woman">
+        <label for="gender-woman">Woman</label><br />
+        <span id="gender-error"></span>
+    </div>
+
+    <div>
+        <p>Please select gender:</p>
+        <input type="radio" id="activity-sedentary" name="activity" value="sedentary">
+        <label for="activity-sedentary">Sedentary</label><br />
+        <input type="radio" id="activity-light" name="activity" value="light">
+        <label for="activity-light">Light</label><br />
+        <input type="radio" id="activity-moderately" name="activity" value="moderately">
+        <label for="activity-moderately">Moderately</label><br />
+        <input type="radio" id="activity-very" name="activity" value="very">
+        <label for="activity-very">Very</label><br />
+        <input type="radio" id="activity-extra" name="activity" value="extra">
+        <label for="activity-extra">Extra</label><br />
+        <span id="activity-error"></span>
+    </div>
+
+    <button onclick="calculateBMR()">Calculate BMR</button>
+
+    <p id="result"></p> 
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
